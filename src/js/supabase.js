@@ -52,7 +52,7 @@ export const updateWorkStatus = async (id, estado) => {
 
 export const login = async (username, password) => {
   if (username === 'admin' && password === 'admin') {
-      window.location.href = '../../templates/admin/index.html';
+      window.location.href = 'templates/admin/index.html';
       return;
   }
 
@@ -66,9 +66,9 @@ export const login = async (username, password) => {
   } else {
       const userRole = await getUserRole(data.user.id);
       if (userRole === 'admin') {
-          window.location.href = '../../templates/admin/index.html'; 
+          window.location.href = 'templates/admin/index.html'; 
       } else {
-          window.location.href = '../../templates/user/worker-tasks.html'; 
+          window.location.href = 'templates/user/worker-tasks.html'; 
       }
   }
 }
