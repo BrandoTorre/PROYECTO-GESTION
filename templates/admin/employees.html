@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Empleados - GeoExtract</title>
+    <link rel="stylesheet" href="../../css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>GeoExtract</h1>
+        <h2>Lista de Empleados</h2>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="employees.html">Lista de Empleados</a></li>
+            <li><a href="add-employee.html">Agregar Empleado</a></li>
+            <li><a href="add-job.html">Asignar Trabajo</a></li>
+            <li><a href="../../index.html" id="logout">Cerrar Sesión</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section>
+            <h3>Lista de Empleados</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Apellido</th>
+                        <th>Posición</th>
+                        <th>Departamento</th>
+                        <th>Estado Trabajo</th>
+                    </tr>
+                </thead>
+                <tbody id="lista-empleados">
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <script src="../../src/js/funcion-mostrar-emple.js" type="module"></script>
+</body>
+</html>

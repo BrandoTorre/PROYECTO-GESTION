@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agregar Empleado - GeoExtract</title>
+    <link rel="stylesheet" href="../../css/styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body>
+    <header>
+        <h1>GeoExtract</h1>
+        <h2>Agregar Empleado</h2>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="employees.html">Lista de Empleados</a></li>
+            <li><a href="add-employee.html">Agregar Empleado</a></li>
+            <li><a href="add-job.html">Asignar Trabajo</a></li>
+            <li><a href="../../index.html" id="logout">Cerrar Sesión</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section>
+            <h3>Agregar Empleado</h3>
+            <form id="formulario-empleado">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+                
+                <label for="apellido">Apellido:</label>
+                <input type="text" id="apellido" name="apellido" required>
+                
+                <label for="posicion">Posición:</label>
+                <select id="posicion" name="posicion" required>
+                    <option value="" disabled selected>Seleccione una posición</option>
+                    <option value="Director Finanzas">Director de Finanzas</option>
+                    <option value="Gerente RRHH">Gerente de RRHH</option>
+                    <option value="Gerente Marketing">Gerente de Marketing</option>
+                    <option value="Gerente Produccion">Producción</option>
+                    <option value="Gerente Ventas">Gerente de Ventas</option>
+                    <option value="Gerente Compras">Gerente de Compras</option>
+                    <option value="Contador">Contador</option>
+                    <option value="Supervisor Planta">Supervisor de Planta</option>
+                    <option value="Planificador Producción">Planificador de Producción</option>
+                    <option value="Analista Ventas">Analista de Ventas</option>
+                    <option value="Analista Compras">Analista de Compras</option>
+                    <option value="Especialista Proveedores">Especialista en Proveedores</option>
+                </select>
+                
+                <label for="departamento">Departamento:</label>
+                <select id="departamento" name="departamento" required>
+                    <option value="" disabled selected>Seleccione un departamento</option>
+                    <option value="Finanzas">Finanzas</option>
+                    <option value="RH">Recursos Humanos</option>
+                    <option value="Marketing">Marketing</option>
+                    <option value="Produccion">Producción</option>
+                    <option value="Ventas">Ventas</option>
+                    <option value="Compras">Compras</option>
+                </select>
+                
+                <button id="btn-agregar" type="submit">Agregar</button>
+            </form>
+        </section>
+    </main>
+    <script src="../../src/js/funcion-agre-user.js" type="module"></script>
+</body>
+</html>

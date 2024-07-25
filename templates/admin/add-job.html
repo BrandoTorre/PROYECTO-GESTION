@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asignar Trabajo - GeoExtract</title>
+    <link rel="stylesheet" href="../../css/styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body>
+    <header>
+        <h1>GeoExtract</h1>
+        <h2>Asignar Trabajo</h2>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="employees.html">Lista de Empleados</a></li>
+            <li><a href="add-employee.html">Agregar Empleado</a></li>
+            <li><a href="add-job.html">Asignar Trabajo</a></li>
+            <li><a href="../../index.html" id="logout">Cerrar Sesión</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section>
+            <h3>Asignar Trabajo</h3>
+            <form id="formulario-trabajo">
+                <label for="id-empleado">Empleado:</label>
+                <select id="id-empleado" name="id-empleado" required>
+                    <option value="">Selecciona un empleado</option>
+                </select>
+
+                <label for="nombre-trabajo">Nombre del Trabajo:</label>
+                <input type="text" id="nombre-trabajo" name="nombre-trabajo" required>
+
+                <label for="fecha-asignacion">Fecha de Asignación:</label>
+                <input type="date" id="fecha-asignacion" name="fecha-asignacion" required>
+
+                <label for="fecha-limite">Fecha Limite:</label>
+                <input type="date" id="fecha-limite" name="fecha-limite" required>
+
+                <label for="descripcion">Descripcion:</label>
+                <textarea id="descripcion" name="descripcion" class="form-control" required></textarea>
+
+                <button type="submit" id="btn-trabajo">Asignar Trabajo</button>
+            </form>
+        </section>
+    </main>
+    <script src="../../src/js/funcion-trabajo.js" type="module"></script>
+</body>
+</html>

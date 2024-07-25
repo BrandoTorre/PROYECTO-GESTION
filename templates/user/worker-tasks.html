@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tareas del Trabajador - GeoExtract</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="../../css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>GeoExtract</h1>
+        <h2>Tareas del Trabajador</h2>
+        <button> <a href="../../index.html">Cerrar Sesión</a></button>
+    </header>
+    <div style="width: 50%; margin: auto;">
+        <canvas id="progresoGrafico"></canvas>
+    </div>
+    <table>
+        <thead>
+            <tr>
+                <th>Empleado</th>
+                <th>Nombre del Trabajo</th>
+                <th>Fecha Asignación</th>
+                <th>Fecha Limite</th>
+                <th>Descripción</th>
+                <th>Estado</th>
+                <th>Acciones</th>
+            </tr>
+        </thead>
+        <tbody id="lista-tareas"></tbody>
+    </table>
+
+    <script src="../../src/js/funcion-ver-trabajos.js" type="module"></script>
+</body>
+</html>
