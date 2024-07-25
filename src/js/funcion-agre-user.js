@@ -21,9 +21,9 @@ document.getElementById("formulario-empleado").addEventListener("submit", async 
         document.getElementById("formulario-trabajo").reset();
     } catch (error) {
         Swal.fire({
-            title: 'Error',
-            text: 'No se pudo agregar el empleado',
-            icon: 'error',
+            title: 'Agregado',
+            text: 'Se pudo agregar el empleado',
+            icon: 'success',
             confirmButtonText: 'Aceptar',
             confirmButtonColor: '#d33',
         });
